@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import './ListLocation.scss';
 import { ItemLocation } from '../ItemLocation/ItemLocation';

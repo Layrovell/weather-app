@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [Demo link](https://Layrovell.github.io/weather-app)
 
 Also you should change homepage property in package.json file.
@@ -25,3 +26,6 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run deploy`
+=======
+# [get weather app](https://Layrovell.github.io/weather-app)
+>>>>>>> 8db1727690e3607b200005e50f24cf3adf32f954

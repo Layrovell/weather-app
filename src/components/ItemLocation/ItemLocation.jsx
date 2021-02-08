@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { addLocation, fetchWeather } from '../../Api/api';
 import './ItemLocation.scss';
