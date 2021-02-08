@@ -1,4 +1,4 @@
-# [Demo link](https://<name>.github.io/<app_name>)
+# [Demo link](https://Layrovell.github.io/weather-app)
 
 Also you should change homepage property in package.json file.
 

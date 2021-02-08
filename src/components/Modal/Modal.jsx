@@ -1,9 +1,8 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable */
 import React from 'react';
 import './Modal.scss';
 
 export const Modal = ({ setModalActive, children }) => (
-  // eslint-disable-next-line jsx-a11y/no-static-element-interactions
   <div
     className="modalw"
     onClick={() => {

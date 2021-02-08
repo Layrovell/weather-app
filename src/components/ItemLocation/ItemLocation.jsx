@@ -22,19 +22,17 @@ export const ItemLocation = ({
   const updateData = () => {
     fetchWeather(name)
       .then(res => addLocation({ ...res }, onAddNewLocation))
-      // eslint-disable-next-line no-console
-      .catch(err => console.log(err));
+      .catch(err => err);
   };
 
   return (
     <>
       <div className="card">
         <div className="card__image-container">
-          {/* eslint-disable-next-line jsx-a11y/alt-text */}
           <img
             className="is-scale"
             src={`https://openweathermap.org/img/wn/${card.icon}@2x.png`}
-            ali="weather"
+            alt="weather"
           />
         </div>
         <div className="card__content">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.scss';
 import { Header } from './components/Header/Header';
 import { FindLocation } from './components/FindLocation/FindLocation';
@@ -6,6 +6,18 @@ import { ListLocation } from './components/ListLocation/ListLocation';
 
 function App() {
   const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    const saveCards = localStorage.getItem('cards');
+
+    if (saveCards) {
+      setCards(JSON.parse(saveCards));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('cards', JSON.stringify(cards));
+  }, [cards]);
 
   const addLocation = (newLocation) => {
     const itemIndex = cards.findIndex(card => card.id === newLocation.id);
@@ -34,13 +46,11 @@ function App() {
         cards={cards}
         onAddNewLocation={addLocation}
       />
-
       <ListLocation
         onAddNewLocation={addLocation}
         cards={cards}
         handleDeleteElement={handleDeleteElement}
       />
-
     </div>
   );
 }
