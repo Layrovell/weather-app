@@ -1,4 +1,4 @@
-# [Demo link](https://Layrovell.github.io/weather-app)
+# [get weather app](https://Layrovell.github.io/weather-app)
 
 ## Available Scripts
 In the project directory, you can run:
