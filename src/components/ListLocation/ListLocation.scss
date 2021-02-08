@@ -1,0 +1,28 @@
+.cards__list {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+  grid-gap: 40px;
+  padding: 60px 0;
+
+  @media (max-width: 1000px) {
+    grid-gap: 10px;
+  }
+
+  @media (max-width: 700px){
+    grid-gap: 20px;
+  }
+
+  &--items {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+
+    @media (max-width: 1000px){
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-end: 2 / span 6;
+      grid-gap: 20px;
+    }
+  }
+}
+

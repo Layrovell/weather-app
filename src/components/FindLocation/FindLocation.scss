@@ -1,0 +1,12 @@
+.search__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+}
+
+.search__box:focus {
+  outline: 0;
+  border: 0;
+}
