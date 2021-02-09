@@ -9,7 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //pointer-events: none;
 }
 
 .modal__content {
@@ -32,7 +31,6 @@
   }
 
   &__timezone {
-    font-family: 'Ultra', serif;
     text-align: center;
     font-size: 32px;
   }
