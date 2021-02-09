@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { useState } from 'react';
+import classnames from 'classnames';
 import { addLocation, fetchWeather } from '../../Api/api';
 import './ItemLocation.scss';
 import { Modal } from '../Modal/Modal';
@@ -12,6 +13,8 @@ export const ItemLocation = ({
   card,
 }) => {
   const [modalActive, setModalActive] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [updateInfo, setUpdateInfo] = useState('Update');
 
   const getDay = (timestamp) => {
     const day = new Date(timestamp * 1000);
@@ -22,8 +25,12 @@ export const ItemLocation = ({
 
   const updateData = () => {
     fetchWeather(name)
-      .then(res => addLocation({ ...res }, onAddNewLocation))
+      .then(res => {
+        addLocation({...res}, onAddNewLocation);
+        setLoading(false);
+      })
       .catch(err => err);
+
   };
 
   return (
@@ -59,23 +66,27 @@ export const ItemLocation = ({
               onClick={() => {
                 setModalActive(true);
               }}
-              className="is-rounded button is-link is-inverted is-small"
+              className="button is-primary is-small"
               type="button"
             >
               Details
             </button>
             <button
-              onClick={updateData}
-              className="is-rounded button is-success is-inverted is-small"
+              onClick={() => {
+                updateData();
+                setLoading(true);
+                setUpdateInfo('Updated');
+              }}
+              className={classnames('button is-link is-small mx-2', { 'is-loading': loading })}
               type="button"
             >
-              Update
+              {updateInfo}
             </button>
             <button
               onClick={() => {
                 handleDeleteElement(id);
               }}
-              className="is-rounded is-danger is-inverted button is-small"
+              className="is-info button is-small"
               type="button"
             >
               Delete

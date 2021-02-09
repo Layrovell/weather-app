@@ -4,7 +4,7 @@ import './Header.scss';
 export const Header = () => (
   <header>
     <h1 className="header__title">
-      Weather?
+      What the weather is like today?
     </h1>
   </header>
 );

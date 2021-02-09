@@ -17,7 +17,7 @@ export const Modal = ({ setModalActive, children }) => (
             setModalActive(false);
           }}
           type="button"
-          className="button is-success is-small"
+          className="button is-danger is-small"
         >
           Close
         </button>

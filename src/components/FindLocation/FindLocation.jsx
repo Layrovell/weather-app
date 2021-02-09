@@ -44,7 +44,7 @@ export const FindLocation = ({ onAddNewLocation }) => {
           onChange={(e) => {
             setQuery(e.target.value);
           }}
-          className={`input mr-4 ${err ? 'is-danger' : 'is-primary'}`}
+          className={`input mr-4 ${err ? 'is-danger' : 'is-link'}`}
           type="text"
           name="input"
           placeholder="Type your city"
@@ -58,7 +58,7 @@ export const FindLocation = ({ onAddNewLocation }) => {
           disabled={buttonDisabled}
           onClick={search}
           type="button"
-          className="button is-primary is-outlined"
+          className="button is-link"
         >
           Add
         </button>
