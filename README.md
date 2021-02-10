@@ -4,6 +4,18 @@
 
 SPA showing weather in selected cities.
 
+## Technologies & Methodologies
+
+* Sass
+* BEM
+* Cross-browser semantic & responsive layouts
+* NPM
+* Bulma
+
+## IDE
+
+* Webstorm
+
 ## Local deployment
 
 ### Dependencies
