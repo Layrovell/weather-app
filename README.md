@@ -1,4 +1,4 @@
-# [Project](https://Layrovell.github.io/weather-app)
+# [Weather app](https://Layrovell.github.io/weather-app)
 
 ## Description
 
