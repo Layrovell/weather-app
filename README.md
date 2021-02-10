@@ -1,13 +1,15 @@
 # [get weather app](https://Layrovell.github.io/weather-app)
 
-## Available Scripts
-In the project directory, you can run:
+**Project Title**
+SPA showing weather in selected cities.
 
-### `npm start`
-Runs the app in the development mode.
+**Description**
+An in-depth paragraph about your project and overview of use.
 
-### `npm run build`
-Builds the app for production to the `build` folder.
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Local deployment**
+Dependencies
+node-sass v4.14.1 and higher
+react v17.0.1
+bulma v0.9.2
 
-### `npm run deploy`
+Any advise for common problems or issues. For any contributing or problem solving you could find me here and here
